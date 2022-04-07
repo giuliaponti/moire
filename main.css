@@ -1,0 +1,158 @@
+body {
+    background-color: black;
+}
+
+h1{
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    font-size: 3.2em;
+    position: absolute;
+    position:fixed;
+    left: 50%;
+    top: 42%;
+    margin-left: -300px;
+    margin-top: -200px;
+    
+}
+
+h4 {
+    font-size: 1.3em;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+}
+
+label {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    
+}
+
+canvas{
+    position: absolute;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+}
+
+.interfaccia {
+    overflow-y: scroll;
+    background-color: rgb(33, 33, 33);
+    border-color: rgb(122, 86, 86);
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -200px;
+    border-radius: 0%, 5%, 5%, 0%;
+    padding-left: 1em;
+}
+
+.interfaccia button {
+    width: 20px;
+}
+
+.interfaccia h2 {
+    margin-left: 0.5em;
+}
+
+.interfaccia input {
+    width:  70%;
+}
+
+.interfaccia input[type="range"] {
+    margin-top: 1.5em;
+    height: 1px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: 3em;
+}
+
+.interfaccia select {
+    width: 100%;
+    display: block;
+}
+
+.interfaccia label {
+    margin-top: 1em;
+    margin-left: 2em;
+    display: block;
+}
+
+.index-btn {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    width: 130px;
+    margin-top: 2em;
+    margin-left: 0.1em;
+    padding: 10px;
+}
+
+.index-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.index-btn,
+.index-btn:active,
+.index-btn:focus {
+    text-decoration: none;
+}
+
+.index-btn span {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.btn {
+    margin-left: 1.5em;
+}
+
+.btn button {
+    width: 70px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-width: 1px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    color: rgb(241, 241, 241);
+    border-color: rgb(255, 255, 255);
+    box-shadow: none;
+    margin: 8px;
+}
+
+
+.forma-pattern {
+    margin-left: 0.6em;
+}
+
+.forma-pattern input {
+    width: 10px;
+    margin-left: 20px;
+}
+
+.forma-pattern label {
+    margin-left: 0;
+    margin-top: -1em;
+    display: inline-block;
+}
+
+input.color {
+    width: 100px;
+    margin-top: -3px;
+    margin-left: 2.3em;
+}
