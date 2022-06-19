@@ -3,147 +3,192 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Moiré</title>
+	<title>Avatar generator</title>
 	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-	<a class="index-btn" href=" https://ixd-supsi.github.io/avatargenerator/">
+	<a class="index-btn" href="https://ixd-supsi.github.io/avatargenerator/">
 		<img src="assets/index-45.png">
 	</a>
 
 	<h1>Moiré</h1>
+	<h1 id="top">Moiré</h1>
 
 
 	<div class="interfaccia">
-		<h4>Sfondo</h4>
-		<label for="colore-sfondo"></label>
-		<input class="color" type="color" id="colore-sfondo" value="#354979">
 
-		<h4>Faccia</h4>
-		<label for="forma-faccia"></label>
-		<div class="forma-pattern">
-			<input type="radio" id="faccia-circolare" name="forma-faccia" value="cerchio" >
-			<label for="faccia-circolare">Circolare</label>
-
-			<input type="radio" id="faccia-quadrata" name="forma-faccia" value="quadrato" checked>
-			<label for="faccia-quadrata">Quadrato</label>
+		<button class="dropdown-btn">Sfondo 
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<label for="colore-sfondo"></label>
+			<input class="color" type="color" id="colore-sfondo" value="#354979">
 		</div>
 	
-		<label for="colore-faccia"></label>
-		<input class="color" type="color" id="colore-faccia" value="#FFFFE9">
+	
+		<button class="dropdown-btn">Sfondo Faccia 
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<div class="forma-pattern">
+				<input type="radio" id="faccia-circolare" name="forma-faccia" value="cerchio" >
+				<label for="faccia-circolare">Circolare</label>
+	
+				<input type="radio" id="faccia-quadrata" name="forma-faccia" value="quadrato" checked>
+				<label for="faccia-quadrata">Quadrato</label>
+			</div>
 
-		<label for="#sagoma-faccia"></label>
-		<input id="sagoma-faccia" type="range" value="0" min="0" max="10">
+			<label for="colore-faccia"></label>
+			<input class="color" type="color" id="colore-faccia" value="#FFFFE9">
 
-		<label for="slider-diametro-faccia"> </label>
-		<input id="slider-diametro-faccia" type="range" min="1" max="30" value="5">
+			<label for="#sagoma-faccia"></label>
+			<input id="sagoma-faccia" type="range" value="0" min="0" max="10">
 
-		<label for="slider-passo-faccia"> </label>
-		<input id="slider-passo-faccia" type="range" min="1" max="30" value="8">
+			<label for="slider-diametro-faccia"> </label>
+			<input id="slider-diametro-faccia" type="range" min="1" max="30" value="5">
+
+			<label for="slider-passo-faccia"> </label>
+			<input id="slider-passo-faccia" type="range" min="1" max="30" value="8">
+
+		</div>
 
 
+		<button class="dropdown-btn">Occhio sinistro 
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<label for="forma-faccia"></label>
+			<div class="forma-pattern">
+				<input type="radio" id="occhio-sx-circolare" name="forma-occhio-sx" value="cerchio" checked>
+				<label for="occhio-sx-circolare">Circolare</label>
+	
+				<input type="radio" id="occhio-sx-quadrata" name="forma-occhio-sx" value="quadrato">
+				<label for="occhio-sx-quadrata">Quadrato</label>
+			</div>
+	
+			<label for="colore-occhio-sx"></label>
+			<input class="color" type="color" id="colore-occhio-sx" value="#000000">
+	
+			<label for="#sagoma-occhio-sx"></label>
+			<input id="sagoma-occhio-sx" type="range" value="0" min="0" max="10">
+	
+			<label for="slider-diametro-occhio-sx">  </label>
+			<input id="slider-diametro-occhio-sx" type="range" min="1" max="30" value="7">
+	
+			<label for="slider-passo-occhio-sx"></label>
+			<input id="slider-passo-occhio-sx" type="range" min="1" max="30" value="8">
+	
+		</div>
   	
-	
-		<h4>Occhio sinistro</h4>
-		<label for="forma-faccia"></label>
-		<div class="forma-pattern">
-			<input type="radio" id="occhio-sx-circolare" name="forma-occhio-sx" value="cerchio" checked>
-			<label for="occhio-sx-circolare">Circolare</label>
+		<button class="dropdown-btn">Occhio destro
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<label for="forma-faccia"></label>
+			<div class="forma-pattern">
+				<input type="radio" id="occhio-dx-circolare" name="forma-occhio-dx" value="cerchio" checked>
+				<label for="occhio-dx-circolare">Circolare</label>
 
-			<input type="radio" id="occhio-sx-quadrata" name="forma-occhio-sx" value="quadrato">
-			<label for="occhio-sx-quadrata">Quadrato</label>
+				<input type="radio" id="occhio-dx-quadrata" name="forma-occhio-dx" value="quadrato">
+				<label for="occhio-dx-quadrata">Quadrato</label>
+			</div>
+
+			<label for="colore-occhio-dx"></label>
+			<input class="color" type="color" id="colore-occhio-dx" value="#000000">
+			<label for="#sagoma-occhio-dx"></label>
+			<input id="sagoma-occhio-dx" type="range" value="0" min="0" max="10">
+
+			<label for="slider-diametro-occhio-dx"></label>
+			<input id="slider-diametro-occhio-dx" type="range" min="1" max="10" value="7">
+
+			<label for="slider-passo-occhio-dx"></label>
+			<input id="slider-passo-occhio-dx" type="range" min="1" max="30" value="8">
+
+		</div>	
+
+
+		<button class="dropdown-btn">Naso 
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<label for="forma-faccia"></label>
+			<div class="forma-pattern">
+				<input type="radio" id="naso-circolare" name="forma-naso" value="cerchio" checked>
+				<label for="naso-circolare">Circolare</label>
+	
+				<input type="radio" id="naso-quadrata" name="forma-naso" value="quadrato">
+				<label for="naso-quadrata">Quadrato</label>
+			</div>
+	
+			<label for="colore-naso"></label>
+			<input class="color" type="color" id="colore-naso" value="#000000">
+			<label for="#sagoma-naso"></label>
+			<input id="sagoma-naso" type="range" value="0" min="0" max="10">
+	
+			<label for="slider-diametro-naso"></label>
+			<input id="slider-diametro-naso" type="range" min="1" max="30" value="6">
+	
+			<label for="slider-passo-naso"></label>
+			<input id="slider-passo-naso" type="range" min="1" max="30" value="7">
 		</div>
-
-		<label for="colore-occhio-sx"></label>
-		<input class="color" type="color" id="colore-occhio-sx" value="#000000">
-
-		<label for="#sagoma-occhio-sx"></label>
-		<input id="sagoma-occhio-sx" type="range" value="0" min="0" max="10">
-
-		<label for="slider-diametro-occhio-sx">  </label>
-		<input id="slider-diametro-occhio-sx" type="range" min="1" max="30" value="7">
-
-		<label for="slider-passo-occhio-sx"></label>
-		<input id="slider-passo-occhio-sx" type="range" min="1" max="30" value="8">
-
-	
-	
-		<h4>Occhio destro</h4>
-		<label for="forma-faccia"></label>
-		<div class="forma-pattern">
-			<input type="radio" id="occhio-dx-circolare" name="forma-occhio-dx" value="cerchio" checked>
-			<label for="occhio-dx-circolare">Circolare</label>
-
-			<input type="radio" id="occhio-dx-quadrata" name="forma-occhio-dx" value="quadrato">
-			<label for="occhio-dx-quadrata">Quadrato</label>
-		</div>
-
-		<label for="colore-occhio-dx"></label>
-		<input class="color" type="color" id="colore-occhio-dx" value="#000000">
-		<label for="#sagoma-occhio-dx"></label>
-		<input id="sagoma-occhio-dx" type="range" value="0" min="0" max="10">
-
-		<label for="slider-diametro-occhio-dx"></label>
-		<input id="slider-diametro-occhio-dx" type="range" min="1" max="10" value="7">
-
-		<label for="slider-passo-occhio-dx"></label>
-		<input id="slider-passo-occhio-dx" type="range" min="1" max="30" value="8">
-
-	
 		
-		<h4>Naso</h4>
-		<label for="forma-faccia"></label>
-		<div class="forma-pattern">
-			<input type="radio" id="naso-circolare" name="forma-naso" value="cerchio" checked>
-			<label for="naso-circolare">Circolare</label>
-
-			<input type="radio" id="naso-quadrata" name="forma-naso" value="quadrato">
-			<label for="naso-quadrata">Quadrato</label>
+		<button class="dropdown-btn">Bocca 
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<label for="forma-faccia"></label>
+			<div class="forma-pattern">
+				<input type="radio" id="bocca-circolare" name="forma-bocca" value="cerchio" checked>
+				<label for="bocca-circolare">Circolare</label>
+	
+				<input type="radio" id="bocca-quadrata" name="forma-bocca" value="quadrato">
+				<label for="bocca-quadrata">Quadrato</label>
+			</div>
+	
+			<label for="colore-bocca"></label>
+			<input class="color" type="color" id="colore-bocca" value="#000000">
+			<label for="#sagoma-bocca"></label>
+			<input id="sagoma-bocca" type="range" value="0" min="0" max="10">
+	
+			<label for="slider-diametro-bocca"></label>
+			<input id="slider-diametro-bocca" type="range" min="1" max="30" value="6">
+	
+			<label for="slider-passo-bocca"></label>
+			<input id="slider-passo-bocca" type="range" min="1" max="30" value="7">
+	
 		</div>
-
-		<label for="colore-naso"></label>
-		<input class="color" type="color" id="colore-naso" value="#000000">
-		<label for="#sagoma-naso"></label>
-		<input id="sagoma-naso" type="range" value="0" min="0" max="10">
-
-		<label for="slider-diametro-naso"></label>
-		<input id="slider-diametro-naso" type="range" min="1" max="30" value="6">
-
-		<label for="slider-passo-naso"></label>
-		<input id="slider-passo-naso" type="range" min="1" max="30" value="7">
-
-
-
-		<h4>Bocca</h4>
-		<label for="forma-faccia"></label>
-		<div class="forma-pattern">
-			<input type="radio" id="bocca-circolare" name="forma-bocca" value="cerchio" checked>
-			<label for="bocca-circolare">Circolare</label>
-
-			<input type="radio" id="bocca-quadrata" name="forma-bocca" value="quadrato">
-			<label for="bocca-quadrata">Quadrato</label>
-		</div>
-
-		<label for="colore-bocca"></label>
-		<input class="color" type="color" id="colore-bocca" value="#000000">
-		<label for="#sagoma-bocca"></label>
-		<input id="sagoma-bocca" type="range" value="0" min="0" max="10">
-
-		<label for="slider-diametro-bocca"></label>
-		<input id="slider-diametro-bocca" type="range" min="1" max="30" value="6">
-
-		<label for="slider-passo-bocca"></label>
-		<input id="slider-passo-bocca" type="range" min="1" max="30" value="7">
 
 	
 	</div>
 
 	<a class="save-btn" target="_blank">
-		<span>Save</span>
 	</a>
 	
 	<script src="script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+
+	<script>
+	//  menu drop down
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		dropdown[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var dropdownContent = this.nextElementSibling;
+			if (dropdownContent.style.display === "block") {
+			dropdownContent.style.display = "none";
+			} else {
+			dropdownContent.style.display = "block";
+			}
+		});
+		}
+
+
+	</script>
+
+
+	
 </body>
 </html>

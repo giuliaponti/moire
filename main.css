@@ -5,14 +5,21 @@ body {
 h1{
     font-family: 'Questrial', sans-serif;
     color: white;
-    font-size: 3.2em;
+    font-size: 7em;
+    font-weight:100;
     position: absolute;
     position:fixed;
-    left: 50%;
-    top: 42%;
-    margin-left: -300px;
-    margin-top: -200px;
+    left: 12%;
+    top: 3%;
+    /* margin-left: -300px;
+    margin-top: -200px; */
     
+}
+
+#top{
+    left: 11.6%;
+    top: 3.2%;
+    transform: rotate(-5deg)
 }
 
 h4 {
@@ -44,18 +51,21 @@ canvas{
     background-color: rgb(33, 33, 33);
     border-color: rgb(122, 86, 86);
     width: 300px;
-    height: 400px;
+    height: 384px;
     top: 50%;
     left: 50%;
     position: absolute;
     margin-left: 100px;
     margin-top: -200px;
     border-radius: 0%, 5%, 5%, 0%;
-    padding-left: 1em;
+    padding-top: 1em;
+
+    overflow-x: hidden;
 }
 
 .interfaccia button {
-    width: 20px;
+    width: 100%;
+
 }
 
 .interfaccia h2 {
@@ -155,4 +165,57 @@ input.color {
     width: 100px;
     margin-top: -3px;
     margin-left: 2.3em;
+}
+
+/*----------------------------- dropdown menu */
+
+.interfaccia button {
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: rgb(48, 50, 59);
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
 }

@@ -181,7 +181,7 @@ function draw(){
 }
 
 function keyPressed() {
-    //se premi s salvi
+    //s salva
     if (key === 's'){
         save("immagine.png");
     }
